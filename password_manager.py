@@ -19,12 +19,7 @@ class password_manager:
     
     def set_password(self):
         count = 0
-        #current_password = self.old_password.pop()
-        
-        '''First remove the last password bcoz we check the password from past password while last password is 
-        current password'''
-
-        
+    
         print('Create Password: ',end='')
         pswd = input()
 
@@ -46,6 +41,8 @@ class password_manager:
 
 
     def is_correct(self,string):
+        '''First remove the last password bcoz we check the password from past password while last password is 
+        current password'''
         current_password = self.old_password.pop()
         if string == current_password:
             return True
