@@ -38,6 +38,7 @@ class Product:
 
 
 prod = Product('Lux' , 25 , 60)
+
 print("Enter the Quantity of bought items: ",end='')
 qty = int(input())
 

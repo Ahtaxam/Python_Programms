@@ -4,8 +4,10 @@ print("Enter the no of sec: ")
 sec = int(input())
 
 hrs = sec // 3600
+f = hrs * 3600
+f = sec - f
 
-minutes = hrs // 60
+minutes = f // 60
 
 seconds = sec % 60
 
